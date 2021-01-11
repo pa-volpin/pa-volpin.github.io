@@ -1,0 +1,122 @@
+.about-section {
+  background-color: #282c34;
+  color: white;
+  min-height: 100vh;
+}
+
+.about-content {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.about-content .image-container {
+  margin: 0 2vw;
+}
+
+.about-content .image-container .image-box {
+  border: 2px solid white;
+  border-radius: 100%;
+  background-image: url('../images/perfil.png');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45vh;
+  width: 45vh;
+}
+
+.about-content .about-text {
+  width: 40%;
+  margin: 0 2vw;
+}
+
+.about-content .about-text .title {
+  font-family: 'Poppins', sans-serif;
+  font-size: calc(10px + 7vmin);
+  margin: 0;
+}
+
+.about-content .about-text .division {
+  border-bottom: 4px dotted white;
+  margin-top: -2vh;
+  width: 70%;
+}
+
+.about-content .about-text .description {
+  font-size: calc(10px + 1.5vmin);
+  margin: 5vh 0;
+}
+
+.trybe-link {
+  color: #61dafb;
+  font-weight: 800;
+}
+
+.about-content .about-text .primary-button {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 992px) {
+  .about-content .image-container .image-box {
+    height: 35vh;
+    width: 35vh;
+  }
+
+  .about-content {
+    flex-direction: column;
+    position: relative;
+  }
+
+  .about-content .about-text .division {
+    border-bottom: 4px dotted white;
+    width: 70%;
+  }
+
+  .about-content .about-text {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 2vw;
+    text-align: center;
+    width: 80%;
+  }
+
+  .about-content .about-text .description {
+    margin-bottom: 1vh;
+  }
+
+  .about-content .about-text .description .secondary-part {
+    display: none;
+  }
+
+  .about-content .about-text .primary-button {
+    visibility: visible;
+  }
+
+  .about-content .about-text.expanded {
+    justify-content: center;
+    background-color: #282c34;
+    border: 2px solid #61dafb;
+    border-radius: 5%;
+    height: 90vh;
+    width: 80vw;
+    margin: 2vh 2vw;
+    position: absolute;
+    top: 2vh;
+    z-index: 1;
+  }
+
+  .about-content .about-text.expanded .secondary-part {
+    display: block;
+  }
+
+  .about-content .about-text.expanded .description {
+    font-size: calc(5px + 2.8vmin);
+    margin: 5vh 5vw;
+  }
+
+  .about-section .about-menu.expanded {
+    display: none;
+  }
+}

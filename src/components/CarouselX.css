@@ -1,0 +1,122 @@
+.carousel {
+  align-items: center;
+  display: grid;
+  height: 100%;
+  text-align: center;
+  align-content: center;
+}
+.carousel-slides {
+  align-items: center;
+  display: grid;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.carousel-slides::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-slides .slide {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+
+.carousel-slides .slide .card {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.carousel-navigators-container {
+  display: flex;
+  justify-content: center;
+  margin-top: -5vh;
+  width: 100%;
+  padding: 0;
+}
+
+.carousel-navigators {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 30vw;
+  padding: 0;
+}
+
+.carousel-navigators .circles-navigator {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2vh 0;
+  z-index: 4;
+}
+
+.carousel-navigators .circles-navigator div {
+  border: 2px solid #61dafb;
+  border-radius: 100%;
+  height: 3vh;
+  justify-content: center;
+  margin: 0.5vh 0.5vw;
+  width: 3vh;
+}
+
+.carousel-navigators .circles-navigator div.active {
+  background-color: #61dafb;
+}
+
+.carousel-navigators .scroll-navigator {
+  background: transparent;
+  border: 2px solid #61dafb;
+  border-radius: 15px 15px 15px 15px;
+  height: 1.5vh;
+  -webkit-appearance: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  width: calc(100% - 3.5vw);
+  margin: 0;
+}
+
+.carousel-navigators .scroll-navigator::-webkit-slider-thumb {
+  border: 2px solid #61dafb;
+  border-radius: 15px 15px 15px 15px;
+  -webkit-appearance: none;
+  appearance: none;
+  width: calc(100% / 3); /* Mudar numero de slides */
+  height: 1.5vh;
+  background: #61dafb;
+  cursor: pointer;
+}
+
+.carousel-navigators .scroll-navigator::-moz-range-thumb {
+  border: 2px solid #61dafb;
+  border-radius: 15px 15px 15px 15px;
+  -webkit-appearance: none;
+  appearance: none;
+  width: calc(100% / 3); /* Mudar numero de slides */
+  height: 1.5vh;
+  background: #61dafb;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 992px) {
+  .carousel-navigators {
+    max-width: 45vw;
+  }
+
+  .carousel-navigators .circles-navigator div {
+    height: 1vh;
+    margin: 1.5vh 1.5vw;
+    width: 1vh;
+  }
+
+  .carousel-navigators .scroll-navigator {
+    display: none;
+  }
+}

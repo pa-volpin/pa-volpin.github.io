@@ -1,0 +1,115 @@
+.projects-section {
+  align-items: center;
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.projects-section .title {
+  font-family: 'Poppins', sans-serif;
+  font-size: calc(10px + 7vmin);
+  margin: 0;
+  text-decoration: underline 4px dotted white;
+}
+
+.project-card {
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 48vh;
+  justify-content: center;
+  margin: 5vh 2vw;
+  padding: 2vh 2vw;
+  text-align: center;
+  width: 16vw;
+  position: relative;
+}
+
+.project-card:hover > .half-mask {
+  border-radius: 15px;
+  margin-left: 0;
+  width: 20vw;
+}
+
+.project-card.trivia .half-mask {
+  background-color: rgb(255,38,116);
+}
+
+.project-card.recipes .half-mask {
+  background: linear-gradient(0deg, #ff901dff 50%, #ff6d3aff 100%, #ed5729ff 100%);
+}
+
+.project-card.pokedex .half-mask {
+  background-color: #b1e56a;
+}
+
+.project-card .half-mask {
+  border: 2px solid white;
+  border-left: none;
+  border-radius: 0 15px 15px 0;
+  height: 52vh;
+  margin-left: 19vw;
+  position: absolute;
+  width: 1vw;
+  z-index: 0;
+}
+
+.project-card .mask {
+  background-color: rgb(35, 36, 39, 0);
+  border-radius: 15px 0 0 15px;
+  height: 52vh;
+  margin-right: 1vw;
+  position: absolute;
+  width: 19vw;
+  z-index: 1;
+}
+
+.project-card .project-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: calc(10px + 3vmin);
+  margin: 0;
+  z-index: 2;
+}
+
+.project-card .description {
+  font-size: calc(10px + 1vmin);
+  margin-bottom: 6vh;
+  width: 70%;
+  z-index: 2;
+}
+
+.project-card .primary-button {
+  font-size: calc(10px + 1vmin);
+  margin: 1vh 2vw;
+  width: 50%;
+  z-index: 2;
+}
+
+@media only screen and (max-width: 992px) {
+  .project-card {
+    height: 50vh;
+    width: 40vw;
+  }
+  
+  .project-card .half-mask {
+    height: 54vh;
+    margin-left: 42vw;
+    width: 2vw;
+  }
+
+  .project-card:hover > .half-mask {
+    width: 44vw;
+  }
+  
+  .project-card .mask {
+    height: 54vh;
+    margin-right: 2vw;
+    width: 42vw;
+  }
+}

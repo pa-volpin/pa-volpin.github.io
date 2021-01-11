@@ -1,0 +1,225 @@
+/* For all */
+/* Checkbox que fica escondido...
+  e é marcado por meio da label...
+  que é o icone hamburg */
+#toggle {
+  display: none;
+}
+
+.menu-container {
+  position: absolute;
+  z-index: 300;
+  width: 100%;
+}
+
+.menu-container .menu .logo-area img {
+  height: 6vh;
+}
+
+.menu-container .menu .logo-area {
+  margin: 0 2vw;
+}
+
+.menu-container .progressbar {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 2vh;
+  padding: 0.5vh 0;
+  width: 100%;
+}
+
+.menu-container:hover .progressbar .call-menu {
+  display: none;
+}
+
+.menu-container .progressbar .call-menu {
+  font-size: calc(5px + 1.5vmin);
+}
+
+.menu-container .menu .menu-content .link {
+  text-decoration: none;
+}
+
+/* Small devices*/
+@media only screen and (max-width: 992px) {
+  .menu {
+    z-index: 3;
+    position: absolute;
+  }
+
+  .menu-container .progressbar {
+    position: absolute;
+    top: 0;
+    height: 5.1vh;
+    z-index: 2;
+  }
+
+  .menu-container .progressbar .call-menu {
+    display: none;
+  }
+
+  /* Quando clica no icone o conteudo...
+  do menu scrolla e preenche toda a tela */
+  .menu.open .menu-content {
+    align-items: center;
+    background-color: #61dafb;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 10vh;
+  }
+
+  /* Menu antes do scroll */
+  .menu.closed {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 5vh;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: rgb(163, 162, 162);
+    /* display: none; */
+  }
+
+  /* Menu depois do scroll */
+  .menu.open {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: rgb(163, 162, 162);
+    width: 100%;
+  }
+
+  /* Container da logo é escondido quando o menu scrolla  */
+  .menu .logo-area {
+    display: none;
+  }
+
+  .menu .menu-toggle {
+    margin: 0 2vw;
+  }
+
+  .menu.open .menu-toggle {
+    align-items: center;
+    display: flex;
+    height: 10vh;
+  }
+
+  .menu.open .menu-toggle .menu-icon {
+    font-size: 30px;
+  }
+
+  .menu-toggle .menu-icon {
+    font-size: 20px;
+    color:#61dafb;
+  }
+
+  .menu .menu-content {
+    display: none;
+  }
+
+  .menu-content .link {
+    background-color: transparent;
+    border: none;
+    color: white;
+    width: 100%;
+    margin: 0;
+    padding: 2.5vh 0;
+    font: 700 20px 'Oswald', sans-serif;
+    text-align: center;
+  }
+
+
+  .menu-content .link:hover {
+    background-color: #fff;
+    color: rgb(61, 61, 61);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  .menu-content .link.selected {
+    background-color: rgb(163, 162, 162);
+    color: #fff;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+}
+
+  /* rgb(184, 182, 182); cinza claro icones*/
+  /* rgb(83,77,87); escuro borda*/
+  /* rgb(163, 162, 162); */
+  /* rgb(255,38,116); rosa */
+
+/* Large devices*/
+@media only screen and (min-width: 992px) {
+  .menu-container .menu-toggle {
+    display: none;
+  }
+
+  .menu-container .menu {
+    display: none;
+  }
+  
+  .menu-container:hover .menu {
+    align-items: center;
+    background-color: rgb(163, 162, 162);
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .menu .menu-toggle {
+    display: none;
+  }
+
+  .menu .menu-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-right: 2vw;
+    height: 100%;
+  }
+
+  .menu-content .link {
+    background-color: transparent;
+    border: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font: 700 20px 'Oswald', sans-serif;
+    justify-content: center;
+    margin: 0;
+    padding: 0 1.5vw;
+    width: 100%;
+  }
+
+  .menu-content .link:hover {
+    background-color: #fff;
+    color:rgb(83,77,87);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  .menu-content .link.selected {
+    background-color: #61dafb;
+    color: #fff;
+  }
+
+  .menu-content .link.selected:hover {
+    background-color:#61dafb;
+    color: #fff;
+  }
+
+  .menu-content .link:hover {
+    background-color: #fff;
+    color:rgb(83,77,87);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+}

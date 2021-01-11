@@ -1,0 +1,45 @@
+.techs-section {
+  align-items: center;
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.techs-section .title {
+  font-family: 'Poppins', sans-serif;
+  font-size: calc(10px + 7vmin);
+  margin: 0;
+  text-decoration: underline 4px dotted white;
+}
+
+.techs-section .tag {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  justify-content: center;
+  margin: 2vh 2vw;
+  position: relative;
+}
+
+.techs-section .tag img {
+  width: 6vw;
+}
+
+.techs-section .tag .tech-name {
+  font-size: calc(10px + 1.2vmin);
+}
+
+@media only screen and (max-width: 992px) {
+  .techs-section .tag {
+    margin: 8vh 5vw;
+  }
+
+  .techs-section .tag img {
+    width: 30vw;
+  }
+}
