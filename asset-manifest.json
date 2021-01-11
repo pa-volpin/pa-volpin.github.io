@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.38f57a59.chunk.css",
+    "main.js": "/static/js/main.f8269b33.chunk.js",
+    "main.js.map": "/static/js/main.f8269b33.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.af907f0e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.af907f0e.js.map",
+    "static/js/2.51f4af6a.chunk.js": "/static/js/2.51f4af6a.chunk.js",
+    "static/js/2.51f4af6a.chunk.js.map": "/static/js/2.51f4af6a.chunk.js.map",
+    "static/js/3.0065d152.chunk.js": "/static/js/3.0065d152.chunk.js",
+    "static/js/3.0065d152.chunk.js.map": "/static/js/3.0065d152.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.38f57a59.chunk.css.map": "/static/css/main.38f57a59.chunk.css.map",
+    "static/js/2.51f4af6a.chunk.js.LICENSE.txt": "/static/js/2.51f4af6a.chunk.js.LICENSE.txt",
+    "static/media/css.d237bf29.svg": "/static/media/css.d237bf29.svg",
+    "static/media/git.140fa4d6.png": "/static/media/git.140fa4d6.png",
+    "static/media/github.fa0212fe.svg": "/static/media/github.fa0212fe.svg",
+    "static/media/html.169ecb56.svg": "/static/media/html.169ecb56.svg",
+    "static/media/javascript.b41852a0.svg": "/static/media/javascript.b41852a0.svg",
+    "static/media/jest.809768de.png": "/static/media/jest.809768de.png",
+    "static/media/logo-volpin.9859df41.png": "/static/media/logo-volpin.9859df41.png",
+    "static/media/mysql.50146c5a.svg": "/static/media/mysql.50146c5a.svg",
+    "static/media/About.css": "/static/media/perfil.6ab718a0.png",
+    "static/media/react.05c79bfe.svg": "/static/media/react.05c79bfe.svg",
+    "static/media/redux.c120994a.png": "/static/media/redux.c120994a.png",
+    "static/media/sql.44c3abaa.svg": "/static/media/sql.44c3abaa.svg",
+    "static/media/vba.c359ed79.svg": "/static/media/vba.c359ed79.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.af907f0e.js",
+    "static/js/2.51f4af6a.chunk.js",
+    "static/css/main.38f57a59.chunk.css",
+    "static/js/main.f8269b33.chunk.js"
+  ]
+}
